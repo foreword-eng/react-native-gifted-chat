@@ -158,7 +158,11 @@ export default class Message<
       return null
     }
 
-    if (currentMessage && currentMessage.user && currentMessage.user.avatar === null) {
+    if (
+      currentMessage &&
+      currentMessage.user &&
+      currentMessage.user.avatar === null
+    ) {
       return null
     }
 
@@ -184,9 +188,8 @@ export default class Message<
                 containerStyle && containerStyle[position],
               ]}
             >
-              {this.props.position === 'left' ? this.renderAvatar() : null}
               {this.renderBubble()}
-              {this.props.position === 'right' ? this.renderAvatar() : null}
+              {this.renderAvatar()}
             </View>
           )}
         </View>

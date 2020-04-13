@@ -14,7 +14,7 @@ import { Omit, IMessage, User, LeftRightStyle } from './types'
 const styles = {
   left: StyleSheet.create({
     container: {
-      marginRight: 8,
+      marginRight: -8,
     },
     onTop: {
       alignSelf: 'flex-start',
@@ -28,7 +28,7 @@ const styles = {
   }),
   right: StyleSheet.create({
     container: {
-      marginLeft: 8,
+      marginLeft: -8,
     },
     onTop: {
       alignSelf: 'flex-start',
@@ -71,7 +71,7 @@ export default class Avatar<
     containerStyle: {},
     imageStyle: {},
     onPressAvatar: () => {},
-    onLongPressAvatar: () => { },
+    onLongPressAvatar: () => {},
   }
 
   static propTypes = {
